@@ -18,3 +18,8 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 ### Système
 
 - Port 0 pour avoir un port random qui est disponible (OS qui gère)
+
+### DB
+
+- Absense d'ORM permet d'être agnostique sur la techno de stockage => SQL only (avec vérif de Rust)
+- Gestion des migrations de BDD (à la main)
