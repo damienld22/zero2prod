@@ -28,3 +28,8 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 ## Web framework
 
 - Injection de dépendance faite via `web::Data` qui se base sur le type de l'object à passer
+
+## Backend
+
+- Notion de `correlation_id` et comment l'utiliser
+- Notion de `span` concernant le logging
