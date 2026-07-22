@@ -18,10 +18,10 @@ APP_USER="${APP_USER:=app}"
 APP_USER_PWD="${APP_USER_PWD:=secret}"
 APP_DB_NAME="${APP_DB_NAME:=newsletter}"
 
+CONTAINER_NAME="postgres"
 
 if [[ -z "${SKIP_DOCKER}" ]]
 then
-  CONTAINER_NAME="postgres"
   docker run \
     --env POSTGRES_USER=${SUPERUSER}  \
     --env POSTGRES_PASSWORD=${SUPERUSER_PWD} \
@@ -42,15 +42,17 @@ then
   done
 
 
-  # Init
-  CREATE_QUERY="CREATE USER ${APP_USER} WITH PASSWORD '${APP_USER_PWD}';"
-  docker exec -it "${CONTAINER_NAME}" psql -U "${SUPERUSER}" -c "${CREATE_QUERY}"
-
-  GRANT_QUERY="ALTER USER ${APP_USER} CREATEDB;";
-  docker exec -it "${CONTAINER_NAME}" psql -U "${SUPERUSER}" -c "${GRANT_QUERY}"
 fi
+  
 
 >&2 echo "Postgres is up and running on port ${DB_PORT}"
+
+# Init
+CREATE_QUERY="CREATE USER ${APP_USER} WITH PASSWORD '${APP_USER_PWD}';"
+docker exec -it "${CONTAINER_NAME}" psql -U "${SUPERUSER}" -c "${CREATE_QUERY}"
+
+GRANT_QUERY="ALTER USER ${APP_USER} CREATEDB;";
+docker exec -it "${CONTAINER_NAME}" psql -U "${SUPERUSER}" -c "${GRANT_QUERY}"
 
 # Create DB
 DATABASE_URL=postgres://${APP_USER}:${APP_USER_PWD}@localhost:${DB_PORT}/${APP_DB_NAME}
