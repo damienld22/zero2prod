@@ -24,6 +24,7 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Absense d'ORM permet d'être agnostique sur la techno de stockage => SQL only (avec vérif de Rust)
 - Gestion des migrations de BDD (à la main)
 - Gestion de pool de connection avec notion de "borrow"
+- connect_lazy pour faire la connection uniquement au premier besoin
 
 ## Web framework
 
@@ -33,3 +34,4 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 
 - Notion de `correlation_id` et comment l'utiliser
 - Notion de `span` concernant le logging
+- Gestion de configuration hiérarchique
