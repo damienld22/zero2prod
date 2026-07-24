@@ -13,11 +13,13 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 ### Tests
 
 - Génération d'un port random pour l'execution des tests d'intégration
+- Faker et génération de plusieurs tests random
 
 
 ### Système
 
 - Port 0 pour avoir un port random qui est disponible (OS qui gère)
+- Notion de Grapheme pour les String
 
 ### DB
 
@@ -35,3 +37,4 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Notion de `correlation_id` et comment l'utiliser
 - Notion de `span` concernant le logging
 - Gestion de configuration hiérarchique
+- Validation de données en se basant sur les types / compilation (type driven development)
