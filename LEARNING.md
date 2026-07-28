@@ -14,6 +14,7 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 
 - Génération d'un port random pour l'execution des tests d'intégration
 - Faker et génération de plusieurs tests random
+- Mettre des valeurs random dans les tests a pour intérêt de dire aux autres devs => La valeur n'est pas importante
 
 
 ### Système
