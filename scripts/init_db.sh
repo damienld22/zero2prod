@@ -41,12 +41,6 @@ then
     sleep 1
   done
 
-
-fi
-  
-
->&2 echo "Postgres is up and running on port ${DB_PORT}"
-
 # Init
 CREATE_QUERY="CREATE USER ${APP_USER} WITH PASSWORD '${APP_USER_PWD}';"
 docker exec -it "${CONTAINER_NAME}" psql -U "${SUPERUSER}" -c "${CREATE_QUERY}"
@@ -58,6 +52,13 @@ docker exec -it "${CONTAINER_NAME}" psql -U "${SUPERUSER}" -c "${GRANT_QUERY}"
 DATABASE_URL=postgres://${APP_USER}:${APP_USER_PWD}@localhost:${DB_PORT}/${APP_DB_NAME}
 export DATABASE_URL
 sqlx database create
+fi
+  
+
+>&2 echo "Postgres is up and running on port ${DB_PORT}"
+
+
+
 sqlx migrate run
 
 >&2 echo "Postgres has been migrated, ready to go !"
