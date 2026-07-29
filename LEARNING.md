@@ -39,3 +39,8 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Notion de `span` concernant le logging
 - Gestion de configuration hiérarchique
 - Validation de données en se basant sur les types / compilation (type driven development)
+
+## Ops
+
+- Deployment strategies
+- migrations SQL (de 0)
