@@ -43,4 +43,4 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 ## Ops
 
 - Deployment strategies
-- migrations SQL (de 0)
+- migrations SQL (de 0) - Besoin de gérer nous même la montée de version du schéma ?

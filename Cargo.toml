@@ -29,6 +29,7 @@ unicode-segmentation = "1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "rt"]}
 uuid = { version = "1", features = ["v4"] }
 validator = "0.18"
+rand = { version = "0.8", features = ["std_rng"]}
 
 [dependencies.reqwest]
 version = "0.12"
@@ -51,6 +52,6 @@ features = [
 fake = "2.9"
 quickcheck = "1.0.3"
 quickcheck_macros = "1"
-rand = "0.8"
 wiremock = "0.6"
 serde_json = "1"
+linkify = "0.10"
