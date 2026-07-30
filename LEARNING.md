@@ -28,6 +28,7 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Gestion des migrations de BDD (à la main)
 - Gestion de pool de connection avec notion de "borrow"
 - connect_lazy pour faire la connection uniquement au premier besoin
+- Notion de transaction
 
 ## Web framework
 
