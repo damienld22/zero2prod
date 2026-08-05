@@ -44,6 +44,7 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Gestion de l'authentification / stockage de password
 - Fonctionnement Async en Rust
 - Ne pas distinguer en temps de calcul la présence ou non d'username
+- Servir HTML
 
 ## Ops
 
