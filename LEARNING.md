@@ -42,6 +42,7 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Validation de données en se basant sur les types / compilation (type driven development)
 - Gestion d'erreur par les types avec pattern matching
 - Gestion de l'authentification / stockage de password
+- Fonctionnement Async en Rust
 
 ## Ops
 
