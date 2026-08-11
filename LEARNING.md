@@ -45,6 +45,7 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Fonctionnement Async en Rust
 - Ne pas distinguer en temps de calcul la présence ou non d'username
 - Servir HTML
+- HMAC
 
 ## Ops
 
