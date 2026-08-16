@@ -46,6 +46,7 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Ne pas distinguer en temps de calcul la présence ou non d'username
 - Servir HTML
 - HMAC
+- Cookies côté back
 
 ## Ops
 

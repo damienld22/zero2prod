@@ -1,6 +1,6 @@
 application:
   port: 8000
-  hmac_secret: "very-long-key-secret-random-djflkdhsjgfhsj"
+  hmac_secret: "very-long-key-secret-random-djflkdhsjgfhsjjdfshfjkdshkjfdshkjfhkjdshkj"
 database:
   host: 127.0.0.1
   port: 5432
