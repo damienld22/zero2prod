@@ -48,6 +48,9 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - HMAC
 - Cookies côté back
 - Authentification par session
+- Resilience : 
+  - Retry / synchro / async task
+  - 
 
 ## Ops
 
