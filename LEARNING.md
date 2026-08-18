@@ -47,6 +47,7 @@ List of learning topics as NodeJS developer following the "Zero to prod" book.
 - Servir HTML
 - HMAC
 - Cookies côté back
+- Authentification par session
 
 ## Ops
 
